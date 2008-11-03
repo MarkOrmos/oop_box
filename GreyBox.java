@@ -8,15 +8,12 @@ public class GreyBox extends WhiteBox implements Box{
 	
 		this.fz=fz;
 	}
-	GreyBox(int width, int height, char fz){
+	GreyBox(int width, int height, char c, char fz){
 		
-		super(width,height);
+		super(width,height,c);
 		this.fz=fz;
 	}
-	GreyBox(char c, char fz){
-			super(c);
-			this.fz=fz;
-	}
+
 	
 	public void print(){
    

@@ -4,14 +4,12 @@ public class WhiteBox extends BlackBox implements Box{
 	
 	WhiteBox(){}
 	
-	WhiteBox(int width, int height){
+	WhiteBox(int width, int height, char c){
 		
-		super(width,height);
+		super(width,height,c);
 		
 	}
-	WhiteBox(char c){
-		super(c);
-	}
+	
 	
 	public void print(){
     
