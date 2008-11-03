@@ -1,4 +1,5 @@
 
+
 public class BlackBox implements Box{
 	
 	protected int height;				// protected damit in unterklassen sichtbar 
@@ -24,15 +25,16 @@ public class BlackBox implements Box{
 			}
 		}
 
-	public void setSize(int width, int height){					//setter
+	public void setSize(int width, int height){						//setter
     
-	if ((3<=width)&&(width<=40)&&(3<=height)&&(height<=10)){	//vorbedingung
-		this.height=height;
-		this.width=width;
+		if ((3<=width)&&(width<=40)&&(3<=height)&&(height<=10)){	//vorbedingung ueberpruefen
+			this.height=height;
+			this.width=width;
+		}
+		else System.out.println("Frame-size invalid!");				//warnung falls bedingung nicht erfuellt
 	}
-	else System.out.println("Frame-size invalid!");				//warnung falls bedingung nicht erfuellt
-	}
-	public void setFrameChar(char fc){							//setter
+	
+	public void setFrameChar(char fc){								//setter
 		this.fc=fc;
 	}
 }

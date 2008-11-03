@@ -1,17 +1,19 @@
 
 public class WhiteBox extends BlackBox implements Box{
 	
+//	fuellzeichen gesetzt damit die methode print() vererbt werden kann
 	protected char fz = ' ';
 	
 	
-	
-	WhiteBox(int width, int height, char c){
+//	Konstruktor
+	WhiteBox(int width, int height, char fc){
 		
-		super(width,height,c);
+		super(width,height,fc);
 		
 	}
 	
-	
+//	die print() methode wird veraendert 
+//	die anderen methoden bleiben unveraendert, verden von BlackBox geerbt
 	public void print(){
     
 		for(int i=0; i<height;i++){

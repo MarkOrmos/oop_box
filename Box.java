@@ -1,13 +1,30 @@
-
+/**
+ * 
+ * Interface Box
+ * instances represent rectangular boxes consisting of printable characters
+ * 
+ */
 public interface Box {
-       // instances represent rectangular boxes
-       //   consisting of printable characters
+       
+	/**
+     * writes several lines representing the box "this" to standard output    
+     */
      void print();
-       // writes several lines representing
-       //   the box "this" to standard output
+       
+     /**
+      * sets the size of the frame of the box
+      * preconditions: 3 <= width <= 40; 3 <= height <= 10 
+      * 
+      * @param width width of the box
+      * @param height height of the box
+      */
      void setSize(int width, int height);
-       // 3 <= width <= 40; 3 <= height <= 10 (preconditions)
-       // sets the size of the frame of the box
+       
+     /**
+      * the frame of the box consists of fc
+      * 
+      * @param fc frametype 
+      */
      void setFrameChar(char fc);
-       // the frame of the box consists of fc
+       
    }
