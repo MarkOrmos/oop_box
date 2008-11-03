@@ -1,6 +1,7 @@
 
 public class WhiteBox extends BlackBox implements Box{
 	
+	protected char fz = ' ';
 	
 	WhiteBox(){}
 	
@@ -22,7 +23,7 @@ public class WhiteBox extends BlackBox implements Box{
 				else if (j==0 || j==width-1){
 						System.out.print(fc);
 					}
-				else System.out.print(" ");
+				else System.out.print(fz);
 			}
 			System.out.println("");
 			}
