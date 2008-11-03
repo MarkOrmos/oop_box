@@ -3,7 +3,7 @@ public class WhiteBox extends BlackBox implements Box{
 	
 	protected char fz = ' ';
 	
-	WhiteBox(){}
+	
 	
 	WhiteBox(int width, int height, char c){
 		

@@ -3,10 +3,6 @@ public class ColoredBox extends WhiteBox{
 
 	
 	
-	ColoredBox(char fz){
-		
-		this.fz=fz;
-	}
 	ColoredBox(int width, int height,char c, char fz) {
 		super(width,height,c);
 		this.fz=fz;

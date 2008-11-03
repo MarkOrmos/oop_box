@@ -9,37 +9,22 @@ public class Test {
 		
 		
 			
-				Box blackbox = new BlackBox();
-				
-				blackbox.setSize(10,5);
-				blackbox.setFrameChar('*');
+				Box blackbox = new BlackBox(10,5,'*');
 				blackbox.print();
-				
-				blackbox.setSize(2,11);
-				
 				
 				System.out.println("");
 				
-				Box whitebox = new WhiteBox();
-				
-				whitebox.setSize(10,5);
-				whitebox.setFrameChar('*');
+				Box whitebox = new WhiteBox(10,5,'*');
 				whitebox.print();
 				
 				System.out.println("");
 				
-				Box greybox = new GreyBox('|');
-				
-				greybox.setSize(10,5);
-				greybox.setFrameChar('*');
+				Box greybox = new GreyBox(10,5,'*','|');
 				greybox.print();
 				
 				System.out.println("");
 				
-				Box coloredbox = new ColoredBox('&');
-				
-				coloredbox.setSize(10,5);
-				coloredbox.setFrameChar('*');
+				Box coloredbox = new ColoredBox(10,5,'*','&');
 				coloredbox.print();
 				
 				System.out.println("");

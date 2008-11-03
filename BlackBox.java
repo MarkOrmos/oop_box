@@ -5,7 +5,6 @@ public class BlackBox implements Box{
 	protected int width;
 	protected char fc;
 	
-	BlackBox(){}						// Defaultkonstruktor
 
 	BlackBox(int width, int height,char c){	//hoehe, breite und framecharakter werden im konstruktor uebergeben
 		
