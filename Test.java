@@ -3,7 +3,7 @@ public class Test {
 
 	/**
 	 * @param args
-	 * @author: Ormos Mark, 0626435
+	 * 
 	 */
 	public static void main(String[] args) {
 		
@@ -36,11 +36,15 @@ public class Test {
 				
 				System.out.println("");
 				
-				Box coloredbox = new ColoredBox('*','&');
+				Box coloredbox = new ColoredBox('&');
 				
 				coloredbox.setSize(10,5);
+				coloredbox.setFrameChar('*');
 				coloredbox.print();
-				coloredbox.setFrameChar('-');
+				
+				System.out.println("");
+				
+				coloredbox.setFrameChar('/');
 				((ColoredBox) coloredbox).setFillChar('@');
 				coloredbox.print();
 				
